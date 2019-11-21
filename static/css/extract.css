@@ -1,0 +1,99 @@
+.extract {
+  transition-property: left, top;/* , width, height; */
+  transition-duration: 1s;
+  -moz-transition-property: left, top;/* , width, height; */
+  -moz-transition-duration: 1s;
+  -webkit-transition-property: left, top;/* , width, height; */
+  -webkit-transition-duration: 1s;
+  -o-transition-property: left, top;/* , width, height; */
+  -o-transition-duration: 1s;
+
+  width: 120px;
+  height: 96px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* overflow: hidden; */
+  background-color: #ccc;
+}
+
+.extract .icon {
+  height: 100%;
+  width: 100%;
+  /* max-height: 120%; */
+  /* max-width: 120%; */
+  transition-property: opacity;
+  transition-duration: 1s;
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 1s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: opacity;
+  -o-transition-duration: 1s;
+}
+
+.extract.cur {
+  background-color: aqua;
+}
+
+.extract.highlight {
+  background-color: orange;
+}
+.extract.cur .icon {
+  opacity: 0.7;
+}
+
+/* .extract.cur .slits .slitscan { */
+/*   border-top: 3px solid white; */
+/*   border-bottom: 3px solid white; */
+/*   margin-top: -3px; */
+/*   margin-bottom: -3px; */
+/* } */
+
+.extract .slits {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 1s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: opacity;
+  -o-transition-duration: 1s;
+}
+
+.extract .slits .slitscan {
+  position: absolute;
+}
+.extract.highlight .icon {
+  opacity: 0.5;
+}
+.extract.expanded .icon {
+  opacity: 0;
+}
+.extract .slits {
+  opacity: 0;
+}
+.extract.expanded .slits {
+  opacity: 1;
+}
+
+.hasoverlays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 30%;
+  background-position: 50%;
+  background-image: url("../png/connect.png");
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}

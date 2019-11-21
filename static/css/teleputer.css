@@ -1,0 +1,28 @@
+.subtitles {
+  position: absolute;
+  right: -20px;
+  bottom: 20px;
+  color: white;
+  font-size: 150%;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-weight: bold;
+  min-width: 200px;
+}
+
+.teleputer .metadata .sticky {
+  float: left;
+  margin-right: 10px; 
+  line-height: 1em;
+}
+
+.teleputer .metadata .tags {
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+}
+
+.razor {
+  position: absolute;
+  z-index: 100;
+}

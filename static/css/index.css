@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../png/checker.png");
+  background-repeat: yes;
+  width: 100%;
+  overflow-x: hidden;
+}
+.zoom {
+  z-index: 30;
+  position: fixed;
+  left: 40px;
+  top: 60px;
+}
+.teleputer {
+  z-index: 40;
+  position: absolute;
+}
+.overlays {
+  z-index: 40;
+  position: absolute;
+};
+
+.overlays .teleputer {
+  top: 0;
+  position: absolute;
+}
+
+.overlays .teleputer .metadata .tags, .overlays .teleputer .metadata .director, .overlays .teleputer .metadata .year, .overlays .teleputer .metadata .timecode {
+  display: none;
+}
+
+.subtitles {
+    pointer-events: none;
+}
+
+.overlays .subtitles {
+    font-size: 100%;
+    left: 0;
+}
+.overlays .metadata {
+    pointer-events: none;
+}
